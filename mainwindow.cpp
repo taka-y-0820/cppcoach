@@ -9,6 +9,7 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    setWindowTitle("cppcoach");
 
     connect(ui->runButton, &QPushButton::clicked,
         this, &MainWindow::onRunClicked);

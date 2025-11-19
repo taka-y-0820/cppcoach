@@ -7,6 +7,7 @@
 #include <QCompleter>
 #include <QStringListModel>
 
+class CppHighlighter;
 class LineNumberArea;
 
 class CodeEditor : public QPlainTextEdit {
@@ -28,11 +29,13 @@ private slots:
     void updateLineNumberArea(const QRect &, int);
 
 private:
+    void toggleComment();
     void insertCompletion(const QString &completion);
     QWidget *lineNumberArea;
     QCompleter *completer;
     QString safePrefix();
     QTimer *completionTimer;
+    CppHighlighter* highlighter;
 
 };
 
