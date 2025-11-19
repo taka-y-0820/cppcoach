@@ -76,5 +76,4 @@ private:
     QRegularExpression commentEndExpression;
 };
 
-
 #endif // CPPHIGHLIGHTER_H
