@@ -331,11 +331,3 @@ void CodeEditor::toggleComment() {
 
     cur.endEditBlock();
 }
-
-
-
-
-
-
-
-
