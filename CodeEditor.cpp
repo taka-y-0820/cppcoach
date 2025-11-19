@@ -253,8 +253,6 @@ void CodeEditor::toggleComment() {
     QTextCursor cur = textCursor();
     cur.beginEditBlock();
 
-    qDebug() << QT_VERSION_STR;
-
     if (!cur.hasSelection()) {
         // 単一行は // のトグル
         cur.movePosition(QTextCursor::StartOfLine);
